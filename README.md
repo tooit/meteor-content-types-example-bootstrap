@@ -1,6 +1,6 @@
 # meteor-content-types-example-bootstrap
 
-Example app for Content Types Meteor package using Bootstrap theme.
+Example app for [Meteor Content Types]() package using [Bootstrap 3]() theme.
 
 @see: https://atmospherejs.com/tooit/content-types
 

@@ -21,3 +21,4 @@ insecure                # Allow all DB writes from clients (for prototyping)
 tooit:content-types
 twbs:bootstrap
 tooit:content-types-bootstrap3
+digilord:faker

@@ -1,36 +1,38 @@
 <template name="Frontpage">
-  {{> NavbarFixedTop}}
-
-  <h3>Books</h3>
-
-  <p>Simple Index+CRUD example using default values.</p>
-
-  <p>Let's <a href="{{pathFor route='ct.book.index'}}">go to the index</a>
-  endpoint or just <a href="{{pathFor route='ct.book.create'}}">create a
-  new Book</a>.</p>
-
-  <hr/>
-
-  <h3>Contacts</h3>
-
-  <p>Simple Index+CRUD example customizing the Create endpoint and content
-  type labels.</p>
-
-  <p>Let's <a href="{{pathFor route='ct.contact.index'}}">go to the index</a>
-  endpoint or just <a href="{{pathFor route='ct.contact.create'}}">create a
-  new Contact</a>.</p>
-
-  <hr/>
-
-  <h3>Tasks (TODO)</h3>
-
-  <p>Simple Index+CRUD example extending the default Index display and adding
-  custom helpers.</p>
-
-  <p>Let's <a href="{{pathFor route='ct.task.index'}}">go to the index</a>
-  endpoint or just <a href="{{pathFor route='ct.task.create'}}">create a
-  new Task</a>.</p>
-
-  <hr/>
-
+  <div class="page-header">
+    <h1>Bootstrap 3 Example <small>for Meteor Content Types</small></h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="jumbotron">
+        <h2>Books</h2>
+        <p>Simple Index+CRUD example using default values.</p>
+        <p>
+          <a class="btn btn-block btn-primary" href="{{pathFor route='ct.book.index'}}" role="button">Visit Administration Index</a>
+          <a class="btn btn-block btn-primary" href="{{pathFor route='ct.book.create'}}" role="button">Create new Book</a>
+          <a class="btn btn-block btn-default" href="{{pathFor route='books'}}" role="button">Go to the Book Store</a>
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="jumbotron">
+        <h2>Contacts</h2>
+        <p>Simple Index+CRUD example customizing the Create endpoint and content type labels.</p>
+        <p>
+          <a class="btn btn-block btn-primary" href="{{pathFor route='ct.contact.index'}}" role="button">Visit Administration Index</a>
+          <a class="btn btn-block btn-primary" href="{{pathFor route='ct.contact.create'}}" role="button">Create new Contact</a>
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="jumbotron">
+        <h2>Tasks (TODO)</h2>
+        <p>Simple Index+CRUD example extending the default Index display and adding custom helpers.</p>
+        <p>
+          <a class="btn btn-block btn-primary" href="{{pathFor route='ct.task.index'}}" role="button">Visit Administration Index</a>
+          <a class="btn btn-block btn-primary" href="{{pathFor route='ct.task.create'}}" role="button">Create new Task</a>
+        </p>
+      </div>
+    </div>
+  </div>
 </template>

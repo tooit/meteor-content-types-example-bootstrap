@@ -10,7 +10,6 @@ var MyCustomChartDisplay = {
   },
   events: {
     'click .my-button': function (event) {
-      // console.log(event);
       alert("You've clicked My Button.");
     }
   }
@@ -19,10 +18,9 @@ var MyCustomChartDisplay = {
 TasksCT = new ContentType({
   collection: Tasks,
   ctid: "task",
+  theme: "bootstrap3",
   endpoints: {
     index: {
-      path: '/my-task-list',
-      name: 'ct.task.index',
       display: 'list',
       displays: {
         list: MyCustomChartDisplay

@@ -22,3 +22,5 @@ tooit:content-types
 twbs:bootstrap
 tooit:content-types-bootstrap3
 digilord:faker
+kadira:flow-router
+kadira:blaze-layout

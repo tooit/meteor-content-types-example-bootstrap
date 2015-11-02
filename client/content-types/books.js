@@ -2,6 +2,7 @@ BooksCT = new ContentType({
   collection: Books,
   ctid: "book",
   theme: "bootstrap3",
+  layout: 'Layout',
   endpoints: {
     index: {
       displays: {
@@ -20,7 +21,7 @@ BooksCT = new ContentType({
       }
     },
     books: {
-      path: 'books',
+      path: '/books',
       name: 'books',
       displays: {
         default: {
@@ -35,20 +36,20 @@ BooksCT = new ContentType({
           },
           events: {
             'click .book-view-detail': function (event) {
-              Router.go('books.purchase', {_id: this._id});
+              FlowRouter.go('books.purchase', {_id: this._id});
             }
           }
         }
       }
     },
     book_purchase: {
-      path: 'books/purchase/:_id',
+      path: '/books/purchase/:_id',
       name: 'books.purchase',
       displays: {
         default: {
           helpers: {
             item: function () {
-              var router = Router.current();
+              var router = FlowRouter.current();
               return Books.findOne({_id:router.params._id});
             }
           },
@@ -64,7 +65,7 @@ BooksCT = new ContentType({
         full: {
           helpers: {
             item: function () {
-              var router = Router.current();
+              var router = FlowRouter.current();
               return Books.findOne({_id:router.params._id});
             }
           },

@@ -19,6 +19,7 @@ TasksCT = new ContentType({
   collection: Tasks,
   ctid: "task",
   theme: "bootstrap3",
+  layout: 'Layout',
   endpoints: {
     index: {
       display: 'list',
